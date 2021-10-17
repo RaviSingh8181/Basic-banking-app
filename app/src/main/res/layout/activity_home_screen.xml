@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".UI.HomeScreen">
+
+    <TextView
+        android:id="@+id/bank_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/averia_serif_libre_light"
+        android:text="@string/the_sparks_foundation_bank"
+        android:textColor="#DD433C55"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/all_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="80dp"
+        android:backgroundTint="#0099ff"
+        android:fontFamily="@font/averia_serif_libre_light"
+        android:onClick="showAllUsers"
+        android:text="@string/users"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/all_transactions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="80dp"
+        android:backgroundTint="#0099ff"
+        android:fontFamily="@font/averia_serif_libre_light"
+        android:onClick="showAllTransactions"
+        android:text="@string/transaction_history"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="267dp"
+        android:baselineAligned="false"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@drawable/banking"
+        tools:ignore="ImageContrastCheck" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:shadowColor="#673AB7"
+        android:text="@string/this_app_is_devolped_by_ravi_singh"
+        android:textColor="#642270"
+        android:textColorHighlight="#2196F3" />
+
+</LinearLayout>
